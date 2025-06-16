@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Consumo Veicular</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body id="home">
+  <header>
+    <h1 style="color:white;">Controle de Consumo de Combustível</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="registro.html">Registrar</a>
+      <a href="valores.html">Histórico</a>
+      <button id="btnLogout">Sair</button>
+    </nav>
+  </header>
+
+  <main>
+    <h3>Resumo do Consumo</h3>
+
+    <label for="filtroAnoHome">Filtrar por Ano:</label>
+    <select id="filtroAnoHome"></select>
+    
+    <label for="filtroMesHome">Filtrar por Mês:</label>
+    <select id="filtroMesHome">
+      <option value="">Todos</option>
+      <option value="0">Janeiro</option>
+      <option value="1">Fevereiro</option>
+      <option value="2">Março</option>
+      <option value="3">Abril</option>
+      <option value="4">Maio</option>
+      <option value="5">Junho</option>
+      <option value="6">Julho</option>
+      <option value="7">Agosto</option>
+      <option value="8">Setembro</option>
+      <option value="9">Outubro</option>
+      <option value="10">Novembro</option>
+      <option value="11">Dezembro</option>
+    </select>
+    
+    
+    <canvas id="graficoConsumo" width="400" height="200"></canvas>
+    <p id="media-consumo">Média de Consumo: -</p>
+    <p id="custo-km">Custo por km: -</p>
+  </main>
+
+  <footer>&copy; Guilherme</footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

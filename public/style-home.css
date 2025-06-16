@@ -1,0 +1,23 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    flex: 1; /* faz o conteúdo expandir e empurrar o footer para baixo */
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+  }

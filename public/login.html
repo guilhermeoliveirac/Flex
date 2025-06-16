@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <form id="loginForm" class="login-box">
+      <div class="imgcontainer">
+        <img src="assents/logo.png" alt="Avatar" class="avatar" />
+      </div>
+
+      <h2>Login</h2>
+
+      <div class="input-group">
+        <label for="uname">Username</label>
+        <input type="text" id="uname" placeholder="Digite seu usuário" required />
+      </div>
+
+      <div class="input-group">
+        <label for="psw">Password</label>
+        <input type="password" id="psw" placeholder="Digite sua senha" required />
+      </div>
+
+      <button type="submit" class="login-button">Entrar</button>
+      
+      <div class="remember">
+        <label>
+          <input type="checkbox" id="lembrar" checked />
+          Lembrar de mim
+        </label>
+      </div>
+
+      <div id="mensagemLogin" class="mensagem"></div>
+    </form>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

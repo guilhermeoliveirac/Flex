@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Histórico de Consumo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="valores">
+  <header>
+    <h1>Histórico de Consumo</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="registro.html">Registrar</a>
+      <a href="valores.html">Histórico</a>
+      <button id="btnLogout">Sair</button>
+    </nav>
+  </header>
+  <main>
+    <label for="filtroAnoHome">Filtrar por Ano:</label>
+    <select id="filtroAnoHome"></select>
+    <label for="filtroMesValores">Filtrar por Mês:</label>
+    <select id="filtroMesValores">
+      <option value="">Todos</option>
+      <option value="0">Janeiro</option>
+      <option value="1">Fevereiro</option>
+      <option value="2">Março</option>
+      <option value="3">Abril</option>
+      <option value="4">Maio</option>
+      <option value="5">Junho</option>
+      <option value="6">Julho</option>
+      <option value="7">Agosto</option>
+      <option value="8">Setembro</option>
+      <option value="9">Outubro</option>
+      <option value="10">Novembro</option>
+      <option value="11">Dezembro</option>
+    </select>
+
+    <table id="tabela-valores">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>KM</th>
+          <th>Litros</th>
+          <th>Valor (R$)</th>
+          <th>Combustível</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+  <footer>&copy; Guilherme</footer>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
