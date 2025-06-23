@@ -42,5 +42,16 @@
   </main>
   <footer>&copy; Guilherme</footer>
   <script src="script.js" defer></script>
+  <script>
+    fetch('/consumo', { credentials: 'include' })
+      .then(res => {
+        if (res.status === 401) {
+          window.location.href = '/login.html';
+        }
+      })
+      .catch(() => {
+        window.location.href = '/login.html';
+      });
+  </script>
 </body>
 </html>
